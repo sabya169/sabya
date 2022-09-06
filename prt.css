@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.a{
+    background-color: black;
+}
+.text3{
+    text-align: center;
+    color: bisque;
+}
+.text2{
+    text-align: center;
+}
+.bl1{
+    background-color: #343a40;
+    /* background-color: black; */
+}
+.primg{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+.pr-img:hover{
+    transform: scale(1.5);
+    transition: 1s all;
+    filter: brightness(95%);
+}
+.cnt{
+    color: antiquewhite;
+    text-align: center;
+}

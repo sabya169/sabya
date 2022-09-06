@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PerfectMatch</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PerfectMatch</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Action
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="story.html">Story</a></li>
+              <li><a class="dropdown-item" href="partner.html">Your partner</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contactpage.html">Contact us</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LogInModal">LogIn</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+
+
+<!-- login Modal -->
+<div class="modal fade" id="LogInModal" tabindex="-1" aria-labelledby="LogInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LogInModalLabel">LogIn to PerfectMatch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">LogIn</button>
+          <p class="mt-4"><b>Shaily you don't need to do LogIn</b></p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- signup Modal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SignUpModalLabel">Get a PerfectMatch account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Create account</button>
+          <p class="mt-4"><b>Free for you Shaily</b></p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+        aria-label="Slide 7"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img" src="1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome Shaily!!</h5>
+          <p>You are an amazing girl having a lot of qualities<br>
+          So i will make sure your life partner should have these important qualities</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="cs.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5><a class="refer" href="happy.html">Take care of your smile</a></h5>
+          <p>He should always make you happy<br>B'coz your preety face shines more, when you smile</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="caring.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <a class="refer" href="caring.html"><h5>Caring</h5></a>
+          
+          <p>His every action should be towards your caring<br>In every difficult time he should be there for you, holding your hand</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="spcl.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Make you feel special</h5>
+          <p>Not just make you feel special<br>We make sure, you are the most special person for him</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="romantic.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5><a class="refer" href="romantic.html">Should be Romantic</a></h5>
+          <p>Romantic doesn't mean that one only!<br>He should make you feel romantic in a lot of different ways</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="5.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Little cute fights</h5>
+          <p>Small little fights are normal between couples<br>But i make sure, he should be able accept his fault and never dis-respect you</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="6.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Love till end</h5>
+          <p>I make sure he has the loyality to love you till the end<br></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="varification">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-lg-4">
+
+          <img src="https://www.ieplads.com/mailers/2016/jeevansathi/js-lp-21sept/images/icon1.png" class="centre">
+          <h4 class="text1">Lakhs of Genuine Members</h4>
+          <p class="text1">Search by location, community, profession &amp; more. Get matches on email as per your
+            preferences.</p>
+
+        </div>
+        <div class="col-lg-4">
+
+          <img src="https://www.ieplads.com/mailers/2016/jeevansathi/js-lp-21sept/images/icon2.png" class="centre">
+          <h4 class="text1">Verification by Visit</h4>
+          <p class="text1">Documents on Age, Address, Income etc. collected, Verified stamp added to profile</p>
+
+        </div>
+        <div class="col-lg-4">
+
+          <img src="https://www.ieplads.com/mailers/2016/jeevansathi/js-lp-21sept/images/icon3.png" class="centre">
+          <h4 class="text1">100% Privacy</h4>
+          <p class="text1">Control who can see your profile and pictures with advanced privacy settings</p>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="py-4 text1">
+    <h3>Matched By PerfectMatch</h3>
+  </div>
+  <div class="container py-2">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="over"><img class="cl1"
+          src="https://media.weddingz.in/images/ff26d7e60a19ab5eb90f38c667c0cb51/wedding-poses-and-pre-wedding-photography-poses-Indian-couple24.jpg"
+          alt=""></div>
+        <p class="text2"><b>Pravesh weds Hem Singh</b></p>
+      </div>
+      <div class="col-lg-3">
+        <div class="over"><img class="cl1" src="https://www.zowed.com/blog/wp-content/uploads/2017/12/susheel.jpg" alt=""></div>
+        <p class="text2"><b>Bharati weds Prabodh</b></p>
+      </div>
+      <div class="col-lg-3">
+        <div class="over"><img class="cl1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb7HKS0GELvy14EyHsN4D1CVQVEqMQha47bCBo6Ho0yeqENG8WiSp-MeTibt2siCKj9A8&usqp=CAU"
+          alt=""></div>
+        <p class="text2"><b>Akanksha weds Naveen</b></p>
+      </div>
+      <div class="col-lg-3">
+        <div class="over"><img class="cl1" src="https://i.pinimg.com/736x/51/75/42/517542f3c7eb8b0000a40cd2ee3b3139.jpg" alt=""></div>
+        <p class="text2"><b>We Can Be Here</b></p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="last">
+    <div class="container">
+      <h3 class="text1 py-4 text3">About PerfectMatch</h3>
+      <p class="text3">PerfectMatch.com is the only Shaily’s leading matrimonial websites that will help her to find her
+        perfect life partner.</p>
+      <p class="text3">I believe choosing a life partner is a big and important decision, and hence work towards giving
+        a simple and secure matchmaking experience for you and your family. Each profile registered with us goes through
+        a manual screening process before going live on site; I provide superior privacy controls for Free; and also
+        verify contact information of members.</p>
+      <p class="text3">You do not need to register just search for perfect match and I will take you closer to your's
+        and only your's lovely life partner!</p>
+    </div>
+  </div>
+  <div class="footer">
+    <nav class="navbar fot1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+
+          <p class="text3">Created by sabyasachi, to impress someone special!</p>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

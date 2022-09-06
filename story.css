@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.himg{
+    height: 60vh;
+    width: 100%;
+    
+}
+.test{
+    text-align: center;
+}
+.cn{
+    background-color: black;
+}
+.text1{
+    text-align: center;
+}
+.footer{
+    /* margin-top: 2rem; */
+    background-color: black;
+    /* height: 4rem; */
+}
+.text-footer{
+    color: white;
+    padding: 2rem;
+   
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.himg{
+    height: 60vh;
+    width: 100%;
+    
+}
+.himg2:hover{
+    filter: brightness(50%);
+    transition: 0.2s all;
+    transform: scale(1.1);
+
+}
+.footer{
+    /* margin-top: 2rem; */
+    background-color: #343a40;
+    /* height: 4rem; */
+}
+.text-footer{
+    color: white;
+    padding: 2rem;
+   
+}
+.text{
+    text-align: center;
+    
+}
+.test{
+    background-color: #343a40;
+}
+.text1{
+    color: antiquewhite;
+}
